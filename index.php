@@ -7,5 +7,13 @@
 </head>
 <body>
     
+<?php 
+require_once ("./modelo/usuarios.php");
+$data = all ();
+var_dump($data)
+
+?>
+
+
 </body>
 </html>
