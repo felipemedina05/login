@@ -15,10 +15,10 @@
         </div>
         <form action="/controlador/login.php" method="POST">
             <label for="email">Email</label>
-            <input type="text" name="email" >
+            <input type="text" name="email" require>
             <br>
             <label for="contrasena">Password</label>
-            <input type="password" name="contrasena" >
+            <input type="password" name="contrasena" require >
             <br>
             <button type="submit">Login</button>
         </form>

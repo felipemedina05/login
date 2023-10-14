@@ -26,12 +26,12 @@ require_once ('../modelo/conexion.php');
             <p>Join thousands of learners from around the world</p>
             <p>Master web development by making real-life projects. There are multiple paths for you to choose</p>
         </div>
-        <form action="/controlador/login.php" method="POST">
+        <form action="/controlador/create.php" method="POST">
             <label for="email">Email</label>
-            <input type="text">
+            <input type="email" name="email" require>
             <br>
             <label for="contrasena">Password</label>
-            <input type="password">
+            <input type="password" name="contrasena" require>
             <br>
             <button type="submit">Submit</button>
         </form>
