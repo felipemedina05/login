@@ -37,6 +37,7 @@
         <p>Don’t have an account yet? <a href="../vista/registro.php"> Register</a></p>
     </div>
     <p>created by Andres</p><p>devChallenges.io</p>
-    
-</body>
-</html>
+
+
+
+
