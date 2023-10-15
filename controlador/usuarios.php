@@ -13,3 +13,17 @@ function all ()
     
 }
 
+function getByID($id)
+
+{
+    global $mysqli;
+    $response = $mysqli->query("SELECT * FROM usuarios WHERE id = $id ");
+
+    $data = $response ->fetch_assoc();
+ 
+    return $data;
+
+
+}
+
+?>

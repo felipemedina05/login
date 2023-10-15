@@ -28,7 +28,7 @@ $usuario = getByID($_SESSION['user']['id']);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <title>personal info</title>
+    <title>Edit personal info</title>
 </head>
 
 <body>
@@ -37,20 +37,14 @@ $usuario = getByID($_SESSION['user']['id']);
         <li><button>Group Chat</button></li>
         <li><a href="/controlador/logout.php"><button>logout</button></a></li>
     </ul>
-    
+    <a href="/vista/infPersonal.php">  < Back</a>
     <div>
-        <h1>Personal info</h1>
-        <p>Basic info, like your name and photo</p>
-        <div>
-
-            <label for="Profile"></label>
-            <input type="text" value="Profile">
-            <p>Some info may be visible to other people</p> <a href="/vista/edicion.php"><button>Edit</button></a>
-        </div>
-
-        <form >
+        <h1>Change Info</h1>
+        <p>Changes will be reflected to every services</p>
+        
+        <form action="/controlador/update.php" method="post">
           <label for="Photo">Photo</label>
-          <input type="text" name="Photo" value="<?= $Photo?>" >
+          <input type="text" name="Photo" value="<?= $Photo?>">
           <br>
           <label for="Nombre">Nombre</label>
           <input type="text" name="Nombre" value="<?= $Nombre?>">
@@ -61,30 +55,16 @@ $usuario = getByID($_SESSION['user']['id']);
           <label for="Phone">Phone</label>
           <input type="text" name="Phone" value="<?= $Phone?>">
           <br>
-          <label for="Email">Email</label >
+          <label for="Email">Email</label>
           <input type="text" name="Email" value="<?= $Email?>">
           <br>
           <label for="Password">Password</label>
-          <input type="text" name="Contrasena" >
+          <input type="text" name="Contrasena" value="">
           <br>
-          
-          
+
+          <button type="submit">Save</button>
         </form>
 
 
 
     </div>
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script>
-
-</body>
-
-</html>

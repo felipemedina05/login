@@ -2,7 +2,7 @@
 
 if ($_SERVER["REQUEST_METHOD"] === "POST")
 {
-    require_once($_SERVER["DOCUMENT_ROOT"] . './modelo/conexion.php');
+    require_once($_SERVER["DOCUMENT_ROOT"] . '../modelo/conexion.php');
     
     extract($_POST);
     $response = $mysqli->query("SELECT * FROM usuarios WHERE Email = '$email';");
