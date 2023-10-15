@@ -1,0 +1,11 @@
+.contenedor {
+    height: 634.08px;
+}
+.descripcion{
+    display: flex;
+    width: 318.88px;
+    flex-direction: column;
+    margin: auto;
+
+
+}
