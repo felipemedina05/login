@@ -1,0 +1,64 @@
+*{
+    box-sizing: unset;
+}
+.contenedor {
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+.titulo{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    color: #828282;
+}
+.edit > label {
+    padding: 5px;
+    margin-right: 40px;
+    width: 80px;
+    border: none;
+    display: flex;
+  }
+  
+  .edit > input {
+    padding: 5px;
+    
+    border-radius: 12px;
+    border: solid 1px #828282;
+    width: 416.93px;
+  }
+  
+  .edit > img {
+    justify-content: center;
+    padding: 5px;
+   
+    width: 72px;
+    height: 72px;
+  }
+
+
+  #file {
+   
+    border: none;
+  }
+
+  #bio{
+    width: 416.93px;
+    height: 91.58px;
+  }
+  
+  #save{
+        background-color: #2F80ED;
+        color: #FFFFFF;
+        Width: 44px;
+        Height: 32px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 8px;
+        padding: 2px;
+        
+    }
+  a{ display: flex;
+    text-align: left;    
+}
